@@ -17,9 +17,6 @@ import org.jsoup.nodes.Document;
 
 public class SearchEngine {
     /*
-     * Let us declare the variables
-     */
-    /*
      * The splitting is used to split the words or string to proper word excluding regular expressions or any other symbols in it
      */
     private final String splitting = "[[ ]*|[,]*|[)]*|[(]*|[\"]*|[;]*|[-]*|[:]*|[']*|[�]*|[\\.]*|[:]*|[/]*|[!]*|[?]*|[+]*]+";
@@ -146,9 +143,6 @@ public class SearchEngine {
 
     /*
      *WebCrawler is used to read the url and get the text and information stored in the url
-     *This is done using Jsoup which will connect to the internet and read the url and its information
-     *the information is stored as text
-     *the text consists of all the words or index terms in that particular url of the webpage of a website
      */
     private String webCrawler(String url) throws Exception {
         Document document = Jsoup.connect(url).get();
@@ -176,7 +170,6 @@ public class SearchEngine {
         ArrayList<String> webPages = new ArrayList<String>();
         for (int p = 0; p < votes.length; ++p) {
             if (votes[p] == indexTerm.length) {
-//				System.out.println(p);
                 webPages.add(this.webPagesArray[p]);
             }
         }

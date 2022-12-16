@@ -6,18 +6,13 @@ import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args)throws IOException {
 
-        /*
-         *I have implemented the simplified Search Engine described in Section 23.5.4 for the pages of a small Web site
-         *I have used all the words in the pages of the site as index terms, excluding stop words such as articles, prepositions, and pronouns
-         *I have used Tries Data Structure to implement the Inverted Index/ Inverted File
-         */
 
         /*
          * Get the name of the Web site from the user from which the search engine will search for the keywords
          */
-        String websiteName =JOptionPane.showInputDialog("Hello there!\nHope you are doing good\n Type in the name of the Web Site you want to search for the words!!\n Our Search Engine  will search that for you!");
+        String websiteName =JOptionPane.showInputDialog("Enter the name of the Web Site you want to search for the words!!");
 
-        JOptionPane.showMessageDialog(null,"Press OK & Hold on while we prepare the structure...It takes only few seconds :)");
+        JOptionPane.showMessageDialog(null,"Loading the keywords in the pages to the Trie");
         /*
          * The name of the web site is passed into the search engine class
          * After which the execution of the search engine class will start

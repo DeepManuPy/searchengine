@@ -16,11 +16,4 @@ public class Node<t>{
         this.key = key;
         this.children = new HashMap<Character, Node<t>>();
     }
-	/*
-	public Node(char key, t value) {
-		this.key = key;
-		this.value = value;
-		this.children = new HashMap<Character, Node<t>>();
-	}
-	*/
 }
